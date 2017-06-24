@@ -61,28 +61,79 @@
         </div>
         <hr>
 
-        <!-- Service Panels -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <!-- Service Tabs -->
         <div class="row">
 
-            <div class="col-md-6 col-sm-6">
-                <div class="panel panel-default text-center">
+            <div class="col-lg-12">
 
-                    <div class="panel-body">
-                        <h4>Daily Time Table</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="page.html" class="btn btn-primary">Learn More</a>
+                <ul id="myTab" class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Daily Time Table</a>
+                    </li>
+                    <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> Retreat Schedule</a>
+                    </li>
+                </ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="service-one">
+                      <h4></h4>
+                       <table class="table table-bordered">
+                         <thead>
+                           <tr>
+                             <th>Firstname</th>
+                             <th>Lastname</th>
+                             <th>Email</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           <tr>
+                             <td>John</td>
+                             <td>Doe</td>
+                             <td>john@example.com</td>
+                           </tr>
+                           <tr>
+                             <td>Mary</td>
+                             <td>Moe</td>
+                             <td>mary@example.com</td>
+                           </tr>
+                           <tr>
+                             <td>July</td>
+                             <td>Dooley</td>
+                             <td>july@example.com</td>
+                           </tr>
+                         </tbody>
+                       </table>
+                    </div>
+                    <div class="tab-pane fade" id="service-two">
+                      <h4></h4>
+                       <table class="table table-bordered">
+                         <thead>
+                           <tr>
+                             <th>#</th>
+                             <th>Activity</th>
+                             <th>Date</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           <tr>
+                             <td>John</td>
+                             <td>Doe</td>
+                             <td>john@example.com</td>
+                           </tr>
+                           <tr>
+                             <td>Mary</td>
+                             <td>Moe</td>
+                             <td>mary@example.com</td>
+                           </tr>
+                           <tr>
+                             <td>July</td>
+                             <td>Dooley</td>
+                             <td>july@example.com</td>
+                           </tr>
+                         </tbody>
+                       </table>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-body">
-                        <h4>Retreat Schedule</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="page.html" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
+
             </div>
         </div>
 

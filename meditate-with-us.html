@@ -112,24 +112,29 @@
                     <div class="tab-pane fade " id="service-one">
                       <section id="time-table">
                         <h4></h4>
-                        <!-- <iframe src="https://docs.google.com/document/d/1BSp8SXuItqkQceSjdhzZEch1hja86ZrkI5HvL61g8rE/pub" frameBorder="0" width="100%" height="1500"></iframe> -->
+                        <!-- Daily Time Table -->
                         <iframe src="https://docs.google.com/document/d/1BSp8SXuItqkQceSjdhzZEch1hja86ZrkI5HvL61g8rE/pub?embedded=true" frameBorder="0" width="100%" height="900"></iframe>
-
                       </section>
                     </div>
                     <div class="tab-pane fade active in" id="service-two">
                       <section id="retreat-schedule">
                         <h4></h4>
-                        <!-- <iframe src="retreat-schedule.html" frameBorder="0" width="100%" height="900"></iframe> -->
                         <div class="row">
-                          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">More Details</button>
+                          <button type="button" id="moreToggleBtn" class="btn btn-primary" data-toggle="collapse" data-target="#demo">More Details</button>
+                        </div>
+                        <br/>
+                        <div id="demo" class="collapse">
+                          <!-- Retreat Schedule -->
+                          <iframe src="https://docs.google.com/document/d/12uN9DTyaE9kUbZWcRndKuaRHbcEP_Dea0RRabD6kSlk/pub?embedded=true" frameBorder="0" width="100%" height="600"></iframe>
                         </div>
 
-                        <div id="demo" class="collapse">
-                          <iframe src="https://docs.google.com/document/d/1CO-pPIW7ALaUE3o4u9M8uZrp7tMMvJkoARtsduWLBbM/pub?embedded=true" frameBorder="0" width="100%" height="1500"></iframe>
+                        <div class="row text-center">
+                          <!-- Event Calendar -->
+                          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=500&amp;wkst=2&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=sathikaduwela%40gmail.com&amp;color=%231B887A&amp;ctz=Asia%2FColombo" style="border-width:0" width="800" height="500" frameborder="0" scrolling="no"></iframe>
+
+                          <!-- Common -->
+                          <iframe src="https://docs.google.com/document/d/1coG2evlN-b_4ff6KsKRH5zIZL6NmnajL6Bm6_DsTL3Q/pub?embedded=true" frameBorder="0" width="100%" height="600"></iframe>
                         </div>
-                        <!-- <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;ctz=Asia%2FColombo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
-<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=netdev%40gmail.com&amp;color=%23333333&amp;ctz=Asia%2FColombo" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
 
                       </section>
                     </div>
@@ -156,6 +161,15 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    $('#moreToggleBtn').click(function(){
+      $(this).text(function(i,old){
+          return old=='More Details' ?  'Less Details' : 'More Details';
+      });
+    });
+
+    </script>
 
 </body>
 

@@ -5,10 +5,12 @@
  */
 
 /* Global Styles */
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
 
 html,
 body {
     height: 100%;
+    font-family: 'Quicksand', sans-serif;
 }
 
 

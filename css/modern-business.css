@@ -19,6 +19,23 @@ body {
     margin-bottom: 30px;
 }
 
+/* bootstrap overrides */
+.navbar-inverse {
+    background-color: #c6ca43;
+    border-color: #9ea051;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #080808;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: rgba(198, 203, 67, 0.07);
+    border-color: #9ea051;
+}
+/* -------------------------------------*/
+
 .img-hover:hover {
     opacity: 0.8;
 }

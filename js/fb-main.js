@@ -28,16 +28,16 @@ console.log(satiApp.name);  // "[DEFAULT]"
 
   sermonsRef.once('value', function(snapshot) {
 
-    console.log(snapshot);
+    // console.log(snapshot);
 
   snapshot.val().reverse().forEach(function(childSnapshot) {
 
-    console.log(childSnapshot);
+    // console.log(childSnapshot);
 
     sermon_list_html = sermon_list_html + '<h2>'+childSnapshot.title+'</h2>';
 
     var recs = childSnapshot.recordings;
-    console.log(recs);
+    // console.log(recs);
 
     _.forEach(recs, function(value) {
           console.log(value.audio);

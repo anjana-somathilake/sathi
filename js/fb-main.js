@@ -27,11 +27,16 @@ console.log(satiApp.name);  // "[DEFAULT]"
  var sermon_list_html = '';
 
   sermonsRef.once('value', function(snapshot) {
-  snapshot.forEach(function(childSnapshot) {
 
-    sermon_list_html = sermon_list_html + '<h2>'+childSnapshot.val().title+'</h2>';
+    console.log(snapshot);
 
-    var recs = childSnapshot.val().recordings;
+  snapshot.val().reverse().forEach(function(childSnapshot) {
+
+    console.log(childSnapshot);
+
+    sermon_list_html = sermon_list_html + '<h2>'+childSnapshot.title+'</h2>';
+
+    var recs = childSnapshot.recordings;
     console.log(recs);
 
     _.forEach(recs, function(value) {
